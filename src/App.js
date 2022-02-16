@@ -2,19 +2,19 @@ import { useState } from "react";
 import { Dropdown } from "./components/Dropdown";
 
 function App() {
-  const [selectedActress, setSelectedActress] = useState("");
+  const [selectedClass, setSelectedClass] = useState("");
 
-  const options = ["Jynx Maze", "Riley Reid", "Kali Rose"];
+  const options = ["Curandeiro", "Mago", "Guerreiro"];
 
   return (
     <div>
-      {selectedActress && <div>Sua Atriz: {selectedActress}</div>}
-
       <Dropdown
-        title="Selecione sua atriz inicial"
+        title="Selecione sua classe"
         options={options}
-        onSelect={setSelectedActress}
+        onSelect={setSelectedClass}
       />
+
+      {selectedClass && <div>Sua classe: {selectedClass}</div>}
     </div>
   );
 }

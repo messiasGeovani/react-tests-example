@@ -1,6 +1,6 @@
 import { Dropdown } from ".";
 
-import { screen, render, userEvent } from "../../../__tests__";
+import { screen, render, userEvent } from "../../../tests";
 
 const title = "Selecione o personagem";
 const options = ["Tiringa", "Galo Sego", "Reptile Churrasqueiro"];
